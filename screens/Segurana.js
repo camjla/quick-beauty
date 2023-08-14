@@ -3,7 +3,6 @@ import { Text, StyleSheet, View, Pressable } from "react-native";
 import { Image } from "expo-image";
 import { useNavigation } from "@react-navigation/native";
 import Property1Default1 from "../components/Property1Default1";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
 import { FontFamily, FontSize, Color, Padding } from "../GlobalStyles";
 
 const Segurana = () => {
@@ -197,16 +196,7 @@ const Segurana = () => {
         onTabItemPress2={() => navigation.navigate("HistoricoServios")}
         onTabItemPress4={() => navigation.navigate("Conta")}
       />
-      <IPhoneStatusBarupper
-        notch={require("../assets/notch3.png")}
-        iPhoneStatusBarupperPosition="absolute"
-        iPhoneStatusBarupperWidth="unset"
-        iPhoneStatusBarupperMarginTop={-462.5}
-        iPhoneStatusBarupperTop="50%"
-        iPhoneStatusBarupperRight={0}
-        iPhoneStatusBarupperLeft={0}
-        iPhoneStatusBarupperBackgroundColor="#924d4d"
-      />
+  
       <View style={[styles.navbar, styles.navbarFlexBox]}>
         <Pressable
           style={styles.wrapper}

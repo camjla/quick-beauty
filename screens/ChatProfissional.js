@@ -1,13 +1,12 @@
-import * as React from "react";
-import { Text, StyleSheet, View, Pressable } from "react-native";
-import { Image } from "expo-image";
-import { useNavigation } from "@react-navigation/native";
-import Property1Default1 from "../components/Property1Default1";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
-import { FontFamily, FontSize, Color, Padding } from "../GlobalStyles";
+import * as React from 'react'
+import { Text, StyleSheet, View, Pressable } from 'react-native'
+import { Image } from 'expo-image'
+import { useNavigation } from '@react-navigation/native'
+import Property1Default1 from '../components/Property1Default1'
+import { FontFamily, FontSize, Color, Padding } from '../GlobalStyles'
 
 const ChatProfissional = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation()
 
   return (
     <View style={styles.chatProfissional}>
@@ -22,14 +21,14 @@ const ChatProfissional = () => {
         <Image
           style={[styles.mensagem4Child, styles.mensagemChildLayout]}
           contentFit="cover"
-          source={require("../assets/ellipse-30.png")}
+          source={require('../assets/ellipse-30.png')}
         />
       </View>
       <View style={styles.mensagem}>
         <Image
           style={[styles.mensagemChild, styles.mensagemLayout1]}
           contentFit="cover"
-          source={require("../assets/line-51.png")}
+          source={require('../assets/line-51.png')}
         />
         <Text style={[styles.mariaEduarda, styles.essaFlexBox]}>
           Maria Eduarda
@@ -41,14 +40,14 @@ const ChatProfissional = () => {
         <Image
           style={[styles.mensagemItem, styles.mensagemChildLayout]}
           contentFit="cover"
-          source={require("../assets/ellipse-30.png")}
+          source={require('../assets/ellipse-30.png')}
         />
       </View>
       <View style={[styles.mensagem1, styles.mensagemLayout]}>
         <Image
           style={[styles.mensagemInner, styles.mensagemLayout1]}
           contentFit="cover"
-          source={require("../assets/line-51.png")}
+          source={require('../assets/line-51.png')}
         />
         <Text style={[styles.robertaFernandes, styles.essaFlexBox]}>
           Roberta Fernandes
@@ -56,7 +55,7 @@ const ChatProfissional = () => {
         <Image
           style={[styles.ellipseIcon, styles.ellipseIconLayout]}
           contentFit="cover"
-          source={require("../assets/ellipse-15.png")}
+          source={require('../assets/ellipse-15.png')}
         />
         <Text style={[styles.essaConversaFoi2, styles.essaTypo]}>
           Essa conversa foi finalizada
@@ -65,14 +64,14 @@ const ChatProfissional = () => {
         <Image
           style={[styles.mensagemChild1, styles.mensagemChildLayout]}
           contentFit="cover"
-          source={require("../assets/ellipse-30.png")}
+          source={require('../assets/ellipse-30.png')}
         />
       </View>
       <View style={[styles.mensagem2, styles.mensagemLayout]}>
         <Image
           style={[styles.lineIcon, styles.mensagemLayout1]}
           contentFit="cover"
-          source={require("../assets/line-51.png")}
+          source={require('../assets/line-51.png')}
         />
         <Text style={[styles.claraMaria, styles.claraMariaClr]}>
           Clara Maria
@@ -84,23 +83,23 @@ const ChatProfissional = () => {
         <Image
           style={[styles.mensagemChild2, styles.ellipseIconLayout]}
           contentFit="cover"
-          source={require("../assets/ellipse-15.png")}
+          source={require('../assets/ellipse-15.png')}
         />
         <Image
           style={[styles.mensagemItem, styles.mensagemChildLayout]}
           contentFit="cover"
-          source={require("../assets/ellipse-30.png")}
+          source={require('../assets/ellipse-30.png')}
         />
       </View>
       <Property1Default1
-        icon={require("../assets/icon4.png")}
-        vector={require("../assets/vector8.png")}
+        icon={require('../assets/icon4.png')}
+        vector={require('../assets/vector8.png')}
         label="Serviços"
-        icon1={require("../assets/icon5.png")}
-        mdiclipboardTextHistory={require("../assets/icon1.png")}
+        icon1={require('../assets/icon5.png')}
+        mdiclipboardTextHistory={require('../assets/icon1.png')}
         label1="Mensagens"
-        icon2={require("../assets/icon1.png")}
-        group={require("../assets/group4.png")}
+        icon2={require('../assets/icon1.png')}
+        group={require('../assets/group4.png')}
         label2="Conta"
         showMarkerComponent={false}
         markerComponentVisible={false}
@@ -257,282 +256,272 @@ const ChatProfissional = () => {
         homeIndicatorWidth={134}
         homeIndicatorHeight={5}
         homeIndicatorAlignSelf="unset"
-        onTabItemPress={() => navigation.navigate("HomeAutomatico")}
-      />
-      <IPhoneStatusBarupper
-        notch={require("../assets/notch3.png")}
-        iPhoneStatusBarupperPosition="absolute"
-        iPhoneStatusBarupperWidth="unset"
-        iPhoneStatusBarupperMarginTop={-462.5}
-        iPhoneStatusBarupperTop="50%"
-        iPhoneStatusBarupperRight={0}
-        iPhoneStatusBarupperLeft={0}
-        iPhoneStatusBarupperBackgroundColor="#924d4d"
+        onTabItemPress={() => navigation.navigate('HomeAutomatico')}
       />
       <Pressable
         style={styles.navbar}
-        onPress={() => navigation.navigate("HomeAutomatico")}
+        onPress={() => navigation.navigate('HomeAutomatico')}
       >
         <Image
           style={styles.navbarChild}
           contentFit="cover"
-          source={require("../assets/vector-4.png")}
+          source={require('../assets/vector-4.png')}
         />
         <Text style={[styles.mensagens, styles.essaFlexBox]}>Mensagens</Text>
       </Pressable>
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   essaFlexBox: {
-    textAlign: "left",
-    lineHeight: 18,
+    textAlign: 'left',
+    lineHeight: 18
   },
   essaTypo: {
     fontFamily: FontFamily.ralewayMedium,
-    fontWeight: "500",
+    fontWeight: '500',
     letterSpacing: 1.1,
     fontSize: FontSize.size_2xs,
-    left: 63,
+    left: 63
   },
   textTypo: {
     color: Color.silver_100,
     letterSpacing: 0.8,
     fontSize: FontSize.size_5xs,
     fontFamily: FontFamily.ralewayMedium,
-    fontWeight: "500",
-    textAlign: "left",
+    fontWeight: '500',
+    textAlign: 'left',
     lineHeight: 18,
-    position: "absolute",
+    position: 'absolute'
   },
   mensagemChildLayout: {
     height: 48,
     width: 49,
     left: 0,
-    position: "absolute",
+    position: 'absolute'
   },
   mensagemLayout1: {
     height: 1,
     width: 362,
     left: 0,
-    position: "absolute",
+    position: 'absolute'
   },
   mensagemLayout: {
     width: 367,
-    position: "absolute",
+    position: 'absolute'
   },
   ellipseIconLayout: {
-    maxHeight: "100%",
-    maxWidth: "100%",
-    width: "2.21%",
-    overflow: "hidden",
-    position: "absolute",
+    maxHeight: '100%',
+    maxWidth: '100%',
+    width: '2.21%',
+    overflow: 'hidden',
+    position: 'absolute'
   },
   claraMariaClr: {
     color: Color.black,
-    textAlign: "left",
+    textAlign: 'left',
     lineHeight: 18,
-    position: "absolute",
+    position: 'absolute'
   },
   andreiaFerreira: {
     color: Color.gainsboro_100,
-    textAlign: "left",
+    textAlign: 'left',
     lineHeight: 18,
-    position: "absolute",
+    position: 'absolute',
     fontFamily: FontFamily.ralewaySemiBold,
-    fontWeight: "600",
+    fontWeight: '600',
     letterSpacing: 1.3,
     fontSize: FontSize.size_smi,
     left: 60,
-    top: 3,
+    top: 3
   },
   essaConversaFoi: {
     top: 27,
-    textAlign: "left",
+    textAlign: 'left',
     lineHeight: 18,
     color: Color.gainsboro_100,
-    position: "absolute",
+    position: 'absolute'
   },
   text: {
     left: 315,
     letterSpacing: 0.8,
     fontSize: FontSize.size_5xs,
-    top: 0,
+    top: 0
   },
   mensagem4Child: {
-    top: 3,
+    top: 3
   },
   mensagem4: {
     top: 411,
     left: 23,
     width: 368,
     height: 51,
-    position: "absolute",
+    position: 'absolute'
   },
   mensagemChild: {
-    top: 151,
+    top: 151
   },
   mariaEduarda: {
     top: 92,
     color: Color.gainsboro_100,
-    textAlign: "left",
+    textAlign: 'left',
     lineHeight: 18,
-    position: "absolute",
+    position: 'absolute',
     fontFamily: FontFamily.ralewaySemiBold,
-    fontWeight: "600",
+    fontWeight: '600',
     letterSpacing: 1.3,
     fontSize: FontSize.size_smi,
-    left: 60,
+    left: 60
   },
   essaConversaFoi1: {
     top: 116,
-    textAlign: "left",
+    textAlign: 'left',
     lineHeight: 18,
     color: Color.gainsboro_100,
-    position: "absolute",
+    position: 'absolute'
   },
   text1: {
     top: 89,
     left: 315,
     letterSpacing: 0.8,
-    fontSize: FontSize.size_5xs,
+    fontSize: FontSize.size_5xs
   },
   mensagemItem: {
-    top: 0,
+    top: 0
   },
   mensagem: {
     top: 230,
     width: 369,
     height: 152,
     left: 22,
-    position: "absolute",
+    position: 'absolute'
   },
   mensagemInner: {
-    top: 146,
+    top: 146
   },
   robertaFernandes: {
     top: 87,
     left: 59,
     color: Color.gainsboro_100,
-    textAlign: "left",
+    textAlign: 'left',
     lineHeight: 18,
-    position: "absolute",
+    position: 'absolute',
     fontFamily: FontFamily.ralewaySemiBold,
-    fontWeight: "600",
+    fontWeight: '600',
     letterSpacing: 1.3,
-    fontSize: FontSize.size_smi,
+    fontSize: FontSize.size_smi
   },
   ellipseIcon: {
-    height: "3.55%",
-    top: "0%",
-    right: "23.95%",
-    bottom: "96.45%",
-    left: "73.84%",
+    height: '3.55%',
+    top: '0%',
+    right: '23.95%',
+    bottom: '96.45%',
+    left: '73.84%'
   },
   essaConversaFoi2: {
     top: 111,
-    textAlign: "left",
+    textAlign: 'left',
     lineHeight: 18,
     color: Color.gainsboro_100,
-    position: "absolute",
+    position: 'absolute'
   },
   text2: {
     top: 84,
     left: 315,
     letterSpacing: 0.8,
-    fontSize: FontSize.size_5xs,
+    fontSize: FontSize.size_5xs
   },
   mensagemChild1: {
-    top: 179,
+    top: 179
   },
   mensagem1: {
     top: 143,
     height: 227,
-    left: 22,
+    left: 22
   },
   lineIcon: {
-    top: 59,
+    top: 59
   },
   claraMaria: {
     top: 0,
     fontFamily: FontFamily.ralewaySemiBold,
-    fontWeight: "600",
+    fontWeight: '600',
     letterSpacing: 1.3,
     fontSize: FontSize.size_smi,
-    left: 60,
+    left: 60
   },
   obrigadaEstareiTe: {
     top: 24,
     fontFamily: FontFamily.ralewayMedium,
-    fontWeight: "500",
+    fontWeight: '500',
     letterSpacing: 1.1,
     fontSize: FontSize.size_2xs,
-    left: 63,
+    left: 63
   },
   h: {
     left: 357,
-    top: 0,
+    top: 0
   },
   mensagemChild2: {
-    height: "13.38%",
-    top: "8.3%",
-    right: "23.68%",
-    bottom: "78.32%",
-    left: "74.11%",
+    height: '13.38%',
+    top: '8.3%',
+    right: '23.68%',
+    bottom: '78.32%',
+    left: '74.11%'
   },
   mensagem2: {
     top: 138,
     left: 21,
-    height: 60,
+    height: 60
   },
   navbarChild: {
     width: 19,
-    height: 19,
+    height: 19
   },
   mensagens: {
     fontSize: FontSize.size_xl,
     letterSpacing: 0.6,
-    fontWeight: "700",
+    fontWeight: '700',
     fontFamily: FontFamily.ralewayBold,
     color: Color.darkseagreen,
-    display: "flex",
+    display: 'flex',
     width: 119,
     height: 35,
     marginLeft: 120,
-    alignItems: "center",
-    textAlign: "left",
-    lineHeight: 18,
+    alignItems: 'center',
+    textAlign: 'left',
+    lineHeight: 18
   },
   navbar: {
     top: 47,
-    shadowColor: "rgba(0, 0, 0, 0.25)",
+    shadowColor: 'rgba(0, 0, 0, 0.25)',
     shadowOffset: {
       width: 0,
-      height: 4,
+      height: 4
     },
     shadowRadius: 4,
     elevation: 4,
     shadowOpacity: 1,
-    borderStyle: "solid",
-    borderColor: "rgba(151, 151, 151, 0.5)",
+    borderStyle: 'solid',
+    borderColor: 'rgba(151, 151, 151, 0.5)',
     borderBottomWidth: 1,
     width: 428,
     height: 53,
-    flexDirection: "row",
+    flexDirection: 'row',
     paddingLeft: Padding.p_lgi,
     paddingRight: Padding.p_31xl,
-    alignItems: "center",
-    overflow: "hidden",
+    alignItems: 'center',
+    overflow: 'hidden',
     left: 0,
-    position: "absolute",
+    position: 'absolute'
   },
   chatProfissional: {
     backgroundColor: Color.colorsBackgroundsLight,
     flex: 1,
-    width: "100%",
-    height: 933,
-  },
-});
+    width: '100%',
+    height: 933
+  }
+})
 
-export default ChatProfissional;
+export default ChatProfissional

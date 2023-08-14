@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { Image } from "expo-image";
 import { StyleSheet, View, Text, Pressable, Modal } from "react-native";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
 import ModalRegister from "../components/ModalRegister";
 import { useNavigation } from "@react-navigation/native";
 import { FontFamily, FontSize, Border, Color } from "../GlobalStyles";

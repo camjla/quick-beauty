@@ -7,7 +7,6 @@ import ContactFormContainer from "../components/ContactFormContainer";
 import FaqContainer from "../components/FaqContainer";
 import FormContainer from "../components/FormContainer";
 import Property1Default1 from "../components/Property1Default1";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
 import { FontFamily, FontSize, Color, Padding } from "../GlobalStyles";
 
 const Informaes = () => {

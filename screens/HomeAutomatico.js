@@ -1,16 +1,15 @@
-import * as React from "react";
-import { StyleSheet, View, Text, Pressable } from "react-native";
-import { Image } from "expo-image";
-import { useNavigation } from "@react-navigation/native";
-import NewsContainer from "../components/NewsContainer";
-import HighlightedServicesContainer1 from "../components/HighlightedServicesContainer1";
-import Property1Default from "../components/Property1Default";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
-import Property1Default1 from "../components/Property1Default1";
-import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
+import * as React from 'react'
+import { StyleSheet, View, Text, Pressable } from 'react-native'
+import { Image } from 'expo-image'
+import { useNavigation } from '@react-navigation/native'
+import NewsContainer from '../components/NewsContainer'
+import HighlightedServicesContainer1 from '../components/HighlightedServicesContainer1'
+import Property1Default from '../components/Property1Default'
+import Property1Default1 from '../components/Property1Default1'
+import { Color, FontFamily, FontSize, Border } from '../GlobalStyles'
 
 const HomeAutomatico = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation()
 
   return (
     <View style={styles.homeAutomatico}>
@@ -18,7 +17,7 @@ const HomeAutomatico = () => {
       <HighlightedServicesContainer1 />
       <Property1Default
         qualServioDesejaSolicitar="Qual serviço deseja solicitar?"
-        group={require("../assets/group.png")}
+        group={require('../assets/group.png')}
         property1DefaultPosition="absolute"
         property1DefaultWidth={391}
         property1DefaultTop={124}
@@ -26,13 +25,13 @@ const HomeAutomatico = () => {
         qualServioDesejaColor="#7c7c7c"
         groupIconMarginLeft={150}
         keywordResearchMarginLeft={150}
-        onBarraDePesquisaPress={() => navigation.navigate("Servio")}
+        onBarraDePesquisaPress={() => navigation.navigate('Servio')}
       />
       <View style={styles.title}>
         <Image
           style={styles.sunIcon}
           contentFit="cover"
-          source={require("../assets/sun.png")}
+          source={require('../assets/sun.png')}
         />
         <Text style={[styles.bomDiaFulano, styles.bomDiaFulanoFlexBox]}>
           Bom dia, Fulano!
@@ -42,14 +41,14 @@ const HomeAutomatico = () => {
         <Image
           style={styles.sejaumprofissionalChild}
           contentFit="cover"
-          source={require("../assets/rectangle-3721.png")}
+          source={require('../assets/rectangle-3721.png')}
         />
         <Text style={[styles.sejaUmProfissional, styles.vejaMaisDetalhesTypo]}>
           Seja um profissional
         </Text>
         <Pressable
           style={styles.linkvejamais}
-          onPress={() => navigation.navigate("SeTorneUmProfissionalInicio")}
+          onPress={() => navigation.navigate('SeTorneUmProfissionalInicio')}
         >
           <Text
             style={[styles.vejaMaisDetalhes, styles.vejaMaisDetalhesTypo]}
@@ -57,29 +56,19 @@ const HomeAutomatico = () => {
           <Image
             style={styles.linkvejamaisChild}
             contentFit="cover"
-            source={require("../assets/arrow-2.png")}
+            source={require('../assets/arrow-2.png')}
           />
         </Pressable>
       </View>
-      <IPhoneStatusBarupper
-        notch={require("../assets/notch.png")}
-        iPhoneStatusBarupperPosition="absolute"
-        iPhoneStatusBarupperWidth="unset"
-        iPhoneStatusBarupperMarginTop="unset"
-        iPhoneStatusBarupperTop={0}
-        iPhoneStatusBarupperRight={0}
-        iPhoneStatusBarupperLeft={0}
-        iPhoneStatusBarupperBackgroundColor="#c6c6c6"
-      />
       <Property1Default1
-        icon={require("../assets/icon.png")}
-        vector={require("../assets/vector1.png")}
+        icon={require('../assets/icon.png')}
+        vector={require('../assets/vector1.png')}
         label="Serviços"
-        icon1={require("../assets/icon1.png")}
-        mdiclipboardTextHistory={require("../assets/mdiclipboardtexthistory.png")}
+        icon1={require('../assets/icon1.png')}
+        mdiclipboardTextHistory={require('../assets/mdiclipboardtexthistory.png')}
         label1="Histórico"
-        icon2={require("../assets/icon1.png")}
-        group={require("../assets/group1.png")}
+        icon2={require('../assets/icon1.png')}
+        group={require('../assets/group1.png')}
         label2="Conta"
         showMarkerComponent={false}
         markerComponentVisible={false}
@@ -236,53 +225,53 @@ const HomeAutomatico = () => {
         homeIndicatorWidth={134}
         homeIndicatorHeight={5}
         homeIndicatorAlignSelf="unset"
-        onTabItemPress1={() => navigation.navigate("Servio")}
-        onTabItemPress2={() => navigation.navigate("HistoricoServios")}
-        onTabItemPress4={() => navigation.navigate("Conta")}
+        onTabItemPress1={() => navigation.navigate('Servio')}
+        onTabItemPress2={() => navigation.navigate('HistoricoServios')}
+        onTabItemPress4={() => navigation.navigate('Conta')}
       />
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   bomDiaFulanoFlexBox: {
-    justifyContent: "center",
-    display: "flex",
-    alignItems: "center",
+    justifyContent: 'center',
+    display: 'flex',
+    alignItems: 'center'
   },
   vejaMaisDetalhesTypo: {
     color: Color.white,
     fontFamily: FontFamily.ralewaySemiBold,
-    fontWeight: "600",
-    textAlign: "center",
+    fontWeight: '600',
+    textAlign: 'center',
     lineHeight: 18,
-    position: "absolute",
+    position: 'absolute'
   },
   sunIcon: {
     width: 28,
     height: 27,
-    overflow: "hidden",
+    overflow: 'hidden'
   },
   bomDiaFulano: {
     fontSize: FontSize.size_7xl,
     letterSpacing: 0.8,
-    textTransform: "capitalize",
-    fontWeight: "500",
+    textTransform: 'capitalize',
+    fontWeight: '500',
     fontFamily: FontFamily.ralewayMedium,
     color: Color.black,
     width: 232,
     marginLeft: 3,
-    textAlign: "center",
+    textAlign: 'center',
     lineHeight: 18,
-    justifyContent: "center",
-    display: "flex",
+    justifyContent: 'center',
+    display: 'flex'
   },
   title: {
     top: 77,
     left: 21,
-    flexDirection: "row",
-    alignItems: "center",
-    position: "absolute",
+    flexDirection: 'row',
+    alignItems: 'center',
+    position: 'absolute'
   },
   sejaumprofissionalChild: {
     top: 14,
@@ -290,7 +279,7 @@ const styles = StyleSheet.create({
     width: 382,
     height: 132,
     left: 0,
-    position: "absolute",
+    position: 'absolute'
   },
   sejaUmProfissional: {
     top: 36,
@@ -298,45 +287,44 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_mini,
     letterSpacing: 0.5,
     width: 170,
-    justifyContent: "center",
-    display: "flex",
-    alignItems: "center",
+    justifyContent: 'center',
+    display: 'flex',
+    alignItems: 'center'
   },
   vejaMaisDetalhes: {
     top: 0,
     fontSize: FontSize.size_5xs,
-    textDecoration: "underline",
+    textDecoration: 'underline',
     letterSpacing: 0.2,
-    left: 0,
+    left: 0
   },
   linkvejamaisChild: {
     top: 6,
     left: 81,
     width: 9,
     height: 7,
-    position: "absolute",
+    position: 'absolute'
   },
   linkvejamais: {
     top: 52,
     left: 7,
     width: 89,
     height: 18,
-    position: "absolute",
+    position: 'absolute'
   },
   sejaumprofissional: {
     top: 414,
     left: 12,
     width: 392,
     height: 157,
-    overflow: "hidden",
-    position: "absolute",
+    overflow: 'hidden',
+    position: 'absolute'
   },
   homeAutomatico: {
     backgroundColor: Color.colorsBackgroundsLight,
     flex: 1,
-    width: "100%",
-    height: 926,
-  },
-});
+    width: '100%'
+  }
+})
 
-export default HomeAutomatico;
+export default HomeAutomatico

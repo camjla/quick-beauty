@@ -1,13 +1,12 @@
-import * as React from "react";
-import { Text, StyleSheet, View, Pressable } from "react-native";
-import { Image } from "expo-image";
-import { useNavigation } from "@react-navigation/native";
-import Property1Default1 from "../components/Property1Default1";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
-import { Color, FontSize, FontFamily, Padding } from "../GlobalStyles";
+import * as React from 'react'
+import { Text, StyleSheet, View, Pressable } from 'react-native'
+import { Image } from 'expo-image'
+import { useNavigation } from '@react-navigation/native'
+import Property1Default1 from '../components/Property1Default1'
+import { Color, FontSize, FontFamily, Padding } from '../GlobalStyles'
 
 const Privacidade = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation()
 
   return (
     <View style={styles.privacidade}>
@@ -31,7 +30,7 @@ const Privacidade = () => {
                 <Text
                   style={[
                     styles.controleQuaisMensagens,
-                    styles.privacidade1FlexBox,
+                    styles.privacidade1FlexBox
                   ]}
                 >
                   Controle quais mensagens deseja receber
@@ -48,7 +47,7 @@ const Privacidade = () => {
                 <Text
                   style={[
                     styles.controleQuaisMensagens,
-                    styles.privacidade1FlexBox,
+                    styles.privacidade1FlexBox
                   ]}
                 >
                   Última atualização da senha há 7 meses.
@@ -61,7 +60,7 @@ const Privacidade = () => {
       <Text
         style={[
           styles.centralDePrivacidadeContainer,
-          styles.privacidadeFlexBox,
+          styles.privacidadeFlexBox
         ]}
       >
         <Text style={styles.centralDePrivacidadeContainer1}>
@@ -75,10 +74,10 @@ const Privacidade = () => {
       <Image
         style={[styles.dashiconsprivacy, styles.navbarPosition]}
         contentFit="cover"
-        source={require("../assets/dashiconsprivacy1.png")}
+        source={require('../assets/dashiconsprivacy1.png')}
       />
       <Property1Default1
-        icon={require("../assets/icon4.png")}
+        icon={require('../assets/icon4.png')}
         showMarkerComponent={false}
         markerComponentVisible
         showRound={false}
@@ -224,33 +223,24 @@ const Privacidade = () => {
         homeIndicatorWidth="unset"
         homeIndicatorHeight={34}
         homeIndicatorAlignSelf="stretch"
-        onTabItemPress={() => navigation.navigate("HomeAutomatico")}
-        onVectorPress={() => navigation.navigate("Servio")}
-        onTabItemPress3={() => navigation.navigate("HistoricoServios")}
-        onTabItemPress5={() => navigation.navigate("Conta")}
+        onTabItemPress={() => navigation.navigate('HomeAutomatico')}
+        onVectorPress={() => navigation.navigate('Servio')}
+        onTabItemPress3={() => navigation.navigate('HistoricoServios')}
+        onTabItemPress5={() => navigation.navigate('Conta')}
       />
-      <IPhoneStatusBarupper
-        notch={require("../assets/notch3.png")}
-        iPhoneStatusBarupperPosition="absolute"
-        iPhoneStatusBarupperWidth="unset"
-        iPhoneStatusBarupperMarginTop={-462.5}
-        iPhoneStatusBarupperTop="50%"
-        iPhoneStatusBarupperRight={0}
-        iPhoneStatusBarupperLeft={0}
-        iPhoneStatusBarupperBackgroundColor="#924d4d"
-      />
+
       <Pressable
         style={[styles.navbar, styles.navbarPosition]}
-        onPress={() => navigation.navigate("ConfiguraesUserNormal")}
+        onPress={() => navigation.navigate('ConfiguraesUserNormal')}
       >
         <Pressable
           style={styles.wrapper}
-          onPress={() => navigation.navigate("ConfiguraesUserNormal")}
+          onPress={() => navigation.navigate('ConfiguraesUserNormal')}
         >
           <Image
             style={styles.icon}
             contentFit="cover"
-            source={require("../assets/vector-4.png")}
+            source={require('../assets/vector-4.png')}
           />
         </Pressable>
         <Text style={[styles.privacidade1, styles.privacidadeTypo]}>
@@ -258,181 +248,181 @@ const Privacidade = () => {
         </Text>
       </Pressable>
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   navbarLayout: {
     width: 431,
-    left: 0,
+    left: 0
   },
   privacidadeFlexBox: {
-    display: "flex",
-    alignItems: "center",
+    display: 'flex',
+    alignItems: 'center'
   },
   ativadoTypo: {
     color: Color.darkslategray_100,
     fontSize: FontSize.size_base,
     fontFamily: FontFamily.ralewayMedium,
-    fontWeight: "500",
-    letterSpacing: 0.5,
+    fontWeight: '500',
+    letterSpacing: 0.5
   },
   parentPosition: {
     paddingVertical: 0,
     paddingHorizontal: Padding.p_xl,
     top: 0,
-    justifyContent: "center",
+    justifyContent: 'center',
     left: 0,
-    position: "absolute",
+    position: 'absolute'
   },
   notificaesTypo: {
     height: 39,
-    alignItems: "center",
-    display: "flex",
-    textAlign: "left",
+    alignItems: 'center',
+    display: 'flex',
+    textAlign: 'left',
     color: Color.black,
     fontFamily: FontFamily.ralewaySemiBold,
-    fontWeight: "600",
+    fontWeight: '600',
     lineHeight: 18,
     letterSpacing: 0.5,
-    fontSize: FontSize.size_lg,
+    fontSize: FontSize.size_lg
   },
   privacidade1FlexBox: {
-    textAlign: "center",
-    lineHeight: 18,
+    textAlign: 'center',
+    lineHeight: 18
   },
   alterarLayout: {
     height: 62,
-    width: 424,
+    width: 424
   },
   navbarPosition: {
-    overflow: "hidden",
-    position: "absolute",
+    overflow: 'hidden',
+    position: 'absolute'
   },
   privacidadeTypo: {
     fontFamily: FontFamily.ralewayBold,
-    fontWeight: "700",
+    fontWeight: '700'
   },
   localizao1: {
     width: 118,
     height: 43,
-    alignItems: "center",
-    textAlign: "left",
+    alignItems: 'center',
+    textAlign: 'left',
     lineHeight: 18,
     color: Color.black,
     letterSpacing: 0.5,
     fontSize: FontSize.size_lg,
-    display: "flex",
+    display: 'flex',
     fontFamily: FontFamily.ralewaySemiBold,
-    fontWeight: "600",
+    fontWeight: '600'
   },
   ativado: {
     marginTop: -15,
-    textAlign: "left",
-    lineHeight: 18,
+    textAlign: 'left',
+    lineHeight: 18
   },
   localizaoGroup: {
     paddingLeft: Padding.p_xl,
     top: 0,
     height: 65,
     width: 424,
-    justifyContent: "center",
+    justifyContent: 'center',
     left: 0,
-    position: "absolute",
+    position: 'absolute'
   },
   localizao: {
     height: 65,
-    width: 424,
+    width: 424
   },
   notificaes: {
-    width: 116,
+    width: 116
   },
   controleQuaisMensagens: {
     color: Color.darkslategray_100,
     fontSize: FontSize.size_base,
     fontFamily: FontFamily.ralewayMedium,
-    fontWeight: "500",
-    letterSpacing: 0.5,
+    fontWeight: '500',
+    letterSpacing: 0.5
   },
   controleQuaisMensagensDesejWrapper: {
     marginTop: 2,
-    flexDirection: "row",
+    flexDirection: 'row'
   },
   notificaesParent: {
     height: 77,
-    width: 424,
+    width: 424
   },
   notificaoesLayout: {
     height: 77,
-    width: 424,
+    width: 424
   },
   alterarSenha1: {
-    width: 145,
+    width: 145
   },
   ltimaAtualizaoDaSenhaHWrapper: {
-    alignItems: "flex-end",
+    alignItems: 'flex-end',
     marginTop: 1,
-    flexDirection: "row",
+    flexDirection: 'row'
   },
   alterarSenhaParent: {
     paddingVertical: 0,
     paddingHorizontal: Padding.p_xl,
     top: 0,
-    justifyContent: "center",
+    justifyContent: 'center',
     left: 0,
-    position: "absolute",
+    position: 'absolute'
   },
   alterarSenha: {
-    marginTop: 7,
+    marginTop: 7
   },
   notificaoesParent: {
     width: 436,
     height: 127,
     marginTop: 7,
-    justifyContent: "center",
+    justifyContent: 'center'
   },
   localizaoParent: {
     top: 230,
     paddingHorizontal: 0,
     paddingVertical: Padding.p_11xs,
-    justifyContent: "center",
-    position: "absolute",
-    left: 0,
+    justifyContent: 'center',
+    position: 'absolute',
+    left: 0
   },
   saibaComoNs: {
     fontFamily: FontFamily.ralewayMedium,
-    fontWeight: "500",
+    fontWeight: '500'
   },
   centralDePrivacidadeContainer1: {
-    lineBreak: "anywhere",
-    width: "100%",
+    lineBreak: 'anywhere',
+    width: '100%'
   },
   centralDePrivacidadeContainer: {
     top: 145,
     left: 91,
-    textAlign: "justify",
+    textAlign: 'justify',
     width: 275,
-    alignItems: "center",
+    alignItems: 'center',
     color: Color.black,
     letterSpacing: 0.5,
     fontSize: FontSize.size_lg,
-    display: "flex",
+    display: 'flex',
     lineHeight: 18,
-    position: "absolute",
+    position: 'absolute'
   },
   dashiconsprivacy: {
     top: 137,
     left: 25,
     width: 56,
-    height: 57,
+    height: 57
   },
   icon: {
-    height: "100%",
-    width: "100%",
+    height: '100%',
+    width: '100%'
   },
   wrapper: {
     width: 19,
-    height: 19,
+    height: 19
   },
   privacidade1: {
     fontSize: FontSize.size_xl,
@@ -441,39 +431,39 @@ const styles = StyleSheet.create({
     width: 186,
     height: 35,
     marginLeft: 90,
-    textAlign: "center",
+    textAlign: 'center',
     lineHeight: 18,
-    alignItems: "center",
-    display: "flex",
-    justifyContent: "center",
+    alignItems: 'center',
+    display: 'flex',
+    justifyContent: 'center'
   },
   navbar: {
     top: 47,
-    shadowColor: "rgba(0, 0, 0, 0.25)",
+    shadowColor: 'rgba(0, 0, 0, 0.25)',
     shadowOffset: {
       width: 0,
-      height: 4,
+      height: 4
     },
     shadowRadius: 4,
     elevation: 4,
     shadowOpacity: 1,
-    borderStyle: "solid",
-    borderColor: "rgba(151, 151, 151, 0.5)",
+    borderStyle: 'solid',
+    borderColor: 'rgba(151, 151, 151, 0.5)',
     borderBottomWidth: 1,
     height: 53,
     paddingLeft: Padding.p_lgi,
     paddingRight: Padding.p_base,
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
     width: 431,
-    left: 0,
+    left: 0
   },
   privacidade: {
     backgroundColor: Color.colorsBackgroundsLight,
     flex: 1,
     height: 929,
-    width: "100%",
-  },
-});
+    width: '100%'
+  }
+})
 
-export default Privacidade;
+export default Privacidade

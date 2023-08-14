@@ -3,7 +3,6 @@ import { Text, StyleSheet, View, Pressable } from "react-native";
 import { Image } from "expo-image";
 import { useNavigation } from "@react-navigation/native";
 import Property1Default1 from "../components/Property1Default1";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
 import { Color, Border, FontFamily, FontSize, Padding } from "../GlobalStyles";
 
 const AdicionarUmaContaBancria = () => {
@@ -263,16 +262,7 @@ const AdicionarUmaContaBancria = () => {
         onTabItemPress2={() => navigation.navigate("ChatProfissional")}
         onTabItemPress4={() => navigation.navigate("ContaProfissional")}
       />
-      <IPhoneStatusBarupper
-        notch={require("../assets/notch3.png")}
-        iPhoneStatusBarupperPosition="absolute"
-        iPhoneStatusBarupperWidth="unset"
-        iPhoneStatusBarupperMarginTop={-462.5}
-        iPhoneStatusBarupperTop="50%"
-        iPhoneStatusBarupperRight={0}
-        iPhoneStatusBarupperLeft={0}
-        iPhoneStatusBarupperBackgroundColor="#924d4d"
-      />
+    
       <View style={[styles.navbar, styles.navbarShadowBox]}>
         <Pressable
           style={styles.wrapper}

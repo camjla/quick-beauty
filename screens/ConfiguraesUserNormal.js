@@ -5,7 +5,6 @@ import { useNavigation } from "@react-navigation/native";
 import SectionCard1 from "../components/SectionCard1";
 import ModalDesativarSuaConta from "../components/ModalDesativarSuaConta";
 import Property1Default1 from "../components/Property1Default1";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
 import { Color, FontFamily, FontSize, Padding } from "../GlobalStyles";
 
 const ConfiguraesUserNormal = () => {

@@ -3,7 +3,6 @@ import { Text, StyleSheet, View, Pressable } from "react-native";
 import { Image } from "expo-image";
 import { useNavigation } from "@react-navigation/native";
 import Property1Default1 from "../components/Property1Default1";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
 import { FontSize, Color, FontFamily, Border, Padding } from "../GlobalStyles";
 
 const Telefone = () => {
@@ -209,16 +208,6 @@ const Telefone = () => {
       <Text style={[styles.iremosTeEnviar, styles.textFlexBox]}>
         Iremos te enviar um código de verificação para este número
       </Text>
-      <IPhoneStatusBarupper
-        notch={require("../assets/notch3.png")}
-        iPhoneStatusBarupperPosition="absolute"
-        iPhoneStatusBarupperWidth="unset"
-        iPhoneStatusBarupperMarginTop={-462.5}
-        iPhoneStatusBarupperTop="50%"
-        iPhoneStatusBarupperRight={0}
-        iPhoneStatusBarupperLeft={0}
-        iPhoneStatusBarupperBackgroundColor="#924d4d"
-      />
       <Pressable
         style={[styles.navbar, styles.navbarPosition]}
         onPress={() => navigation.navigate("ConfiguraesUserNormal")}

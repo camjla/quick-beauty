@@ -6,7 +6,6 @@ import { useNavigation } from "@react-navigation/native";
 import ServiceCard from "../components/ServiceCard";
 import FormContainer from "../components/FormContainer";
 import Property1Default1 from "../components/Property1Default1";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
 import { FontFamily, FontSize, Color, Border, Padding } from "../GlobalStyles";
 
 const HistoricoServios = () => {

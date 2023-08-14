@@ -1,58 +1,56 @@
-const Stack = createNativeStackNavigator();
-import * as React from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { useFonts } from "expo-font";
-import HomeAutomatico from "./screens/HomeAutomatico";
-import Selected2 from "./components/Selected2";
-import Property1Default from "./components/Property1Default";
-import IPhoneStatusBarupper from "./components/IPhoneStatusBarupper";
-import DarkModefalse from "./components/DarkModefalse";
-import VisibleNOIcon from "./components/VisibleNOIcon";
-import ColorClearIcon from "./components/ColorClearIcon";
-import Property1Default1 from "./components/Property1Default1";
-import DarkThemeTrue from "./components/DarkThemeTrue";
-import Conta from "./screens/Conta";
-import HistoricoServios from "./screens/HistoricoServios";
-import Servio from "./screens/Servio";
-import SeTorneUmProfissionalRegi from "./screens/SeTorneUmProfissionalRegi";
-import SeTorneUmProfissionalFoto from "./screens/SeTorneUmProfissionalFoto";
-import ConfiguraesUserNormal from "./screens/ConfiguraesUserNormal";
-import AdicionarEndereo from "./screens/AdicionarEndereo";
-import Informaes from "./screens/Informaes";
-import PerfilDoProfisisonal from "./screens/PerfilDoProfisisonal";
-import CarregamentoLogin from "./screens/CarregamentoLogin";
-import ContaProfissional from "./screens/ContaProfissional";
-import SeTorneUmProfissionalInici from "./screens/SeTorneUmProfissionalInici";
-import SeTorneUmProfissionalCont from "./screens/SeTorneUmProfissionalCont";
-import Privacidade from "./screens/Privacidade";
-import Segurana from "./screens/Segurana";
-import Telefone from "./screens/Telefone";
-import HistoricoMensagens from "./screens/HistoricoMensagens";
-import AlterarEndereo from "./screens/AlterarEndereo";
-import Carregamento from "./screens/Carregamento";
-import ChatProfissional from "./screens/ChatProfissional";
-import PerfilDoProfisisonalPagame from "./screens/PerfilDoProfisisonalPagame";
-import AdicionarUmaContaBancria from "./screens/AdicionarUmaContaBancria";
-import HomeLogin from "./screens/HomeLogin";
+const Stack = createNativeStackNavigator()
+import * as React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { useFonts } from 'expo-font'
+import HomeAutomatico from './screens/HomeAutomatico'
+import Selected2 from './components/Selected2'
+import Property1Default from './components/Property1Default'
+import DarkModefalse from './components/DarkModefalse'
+import VisibleNOIcon from './components/VisibleNOIcon'
+import ColorClearIcon from './components/ColorClearIcon'
+import Property1Default1 from './components/Property1Default1'
+import DarkThemeTrue from './components/DarkThemeTrue'
+import Conta from './screens/Conta'
+import HistoricoServios from './screens/HistoricoServios'
+import Servio from './screens/Servio'
+import SeTorneUmProfissionalRegi from './screens/SeTorneUmProfissionalRegi'
+import SeTorneUmProfissionalFoto from './screens/SeTorneUmProfissionalFoto'
+import ConfiguraesUserNormal from './screens/ConfiguraesUserNormal'
+import AdicionarEndereo from './screens/AdicionarEndereo'
+import Informaes from './screens/Informaes'
+import PerfilDoProfisisonal from './screens/PerfilDoProfisisonal'
+import CarregamentoLogin from './screens/CarregamentoLogin'
+import ContaProfissional from './screens/ContaProfissional'
+import SeTorneUmProfissionalInici from './screens/SeTorneUmProfissionalInici'
+import SeTorneUmProfissionalCont from './screens/SeTorneUmProfissionalCont'
+import Privacidade from './screens/Privacidade'
+import Segurana from './screens/Segurana'
+import Telefone from './screens/Telefone'
+import HistoricoMensagens from './screens/HistoricoMensagens'
+import AlterarEndereo from './screens/AlterarEndereo'
+import Carregamento from './screens/Carregamento'
+import ChatProfissional from './screens/ChatProfissional'
+import PerfilDoProfisisonalPagame from './screens/PerfilDoProfisisonalPagame'
+import AdicionarUmaContaBancria from './screens/AdicionarUmaContaBancria'
+import HomeLogin from './screens/HomeLogin'
 
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { View, Text, Pressable, TouchableOpacity } from "react-native";
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 const App = () => {
-  const [hideSplashScreen, setHideSplashScreen] = React.useState(true);
+  const [hideSplashScreen, setHideSplashScreen] = React.useState(true)
   const [fontsLoaded, error] = useFonts({
-    "Raleway-Light": require("./assets/fonts/Raleway-Light.ttf"),
-    "Raleway-Regular": require("./assets/fonts/Raleway-Regular.ttf"),
-    "Raleway-Medium": require("./assets/fonts/Raleway-Medium.ttf"),
-    "Raleway-SemiBold": require("./assets/fonts/Raleway-SemiBold.ttf"),
-    "Raleway-Bold": require("./assets/fonts/Raleway-Bold.ttf"),
-    "Raleway-ExtraBold": require("./assets/fonts/Raleway-ExtraBold.ttf"),
-    "Raleway-Italic": require("./assets/fonts/Raleway-Italic.ttf"),
-    "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
-  });
+    'Raleway-Light': require('./assets/fonts/Raleway-Light.ttf'),
+    'Raleway-Regular': require('./assets/fonts/Raleway-Regular.ttf'),
+    'Raleway-Medium': require('./assets/fonts/Raleway-Medium.ttf'),
+    'Raleway-SemiBold': require('./assets/fonts/Raleway-SemiBold.ttf'),
+    'Raleway-Bold': require('./assets/fonts/Raleway-Bold.ttf'),
+    'Raleway-ExtraBold': require('./assets/fonts/Raleway-ExtraBold.ttf'),
+    'Raleway-Italic': require('./assets/fonts/Raleway-Italic.ttf'),
+    'Roboto-Regular': require('./assets/fonts/Roboto-Regular.ttf')
+  })
 
   if (!fontsLoaded && !error) {
-    return null;
+    return null
   }
 
   return (
@@ -60,8 +58,10 @@ const App = () => {
       <NavigationContainer>
         {hideSplashScreen ? (
           <Stack.Navigator
-            initialRouteName="Carregamento"
-            screenOptions={{ headerShown: false }}
+            initialRouteName="Conta"
+            screenOptions={{
+              headerShown: true
+            }}
           >
             <Stack.Screen
               name="HomeAutomatico"
@@ -187,6 +187,6 @@ const App = () => {
         ) : null}
       </NavigationContainer>
     </>
-  );
-};
-export default App;
+  )
+}
+export default App

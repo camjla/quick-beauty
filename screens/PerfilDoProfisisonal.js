@@ -7,7 +7,6 @@ import ServiceDescriptionContainer1 from "../components/ServiceDescriptionContai
 import FormContainer2 from "../components/FormContainer2";
 import CardContainer from "../components/CardContainer";
 import Property1Default1 from "../components/Property1Default1";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
 import { FontSize, FontFamily, Color, Padding } from "../GlobalStyles";
 
 const PerfilDoProfisisonal = () => {

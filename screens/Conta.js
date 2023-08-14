@@ -5,7 +5,6 @@ import { useNavigation } from "@react-navigation/native";
 import ModalSairDeSuaConta from "../components/ModalSairDeSuaConta";
 import ProfileCard1 from "../components/ProfileCard1";
 import Property1Default1 from "../components/Property1Default1";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
 import { FontFamily, Color, FontSize, Padding } from "../GlobalStyles";
 
 const Conta = () => {

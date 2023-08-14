@@ -7,7 +7,6 @@ import FinalizarButtonContainer from "../components/FinalizarButtonContainer";
 import ServiceValueForm from "../components/ServiceValueForm";
 import ContainerCard from "../components/ContainerCard";
 import Property1Default1 from "../components/Property1Default1";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
 import { FontFamily, FontSize, Color, Padding } from "../GlobalStyles";
 
 const SeTorneUmProfissionalFoto = () => {

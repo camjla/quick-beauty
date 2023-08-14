@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Image } from "expo-image";
 import { StyleSheet, View } from "react-native";
-import IPhoneStatusBarupper from "../components/IPhoneStatusBarupper";
 import { Color, Border } from "../GlobalStyles";
 
 const CarregamentoLogin = () => {
