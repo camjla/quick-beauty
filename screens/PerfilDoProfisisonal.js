@@ -226,16 +226,6 @@ const PerfilDoProfisisonal = () => {
           onTabItemPress2={() => navigation.navigate("ChatProfissional")}
           onTabItemPress4={() => navigation.navigate("ContaProfissional")}
         />
-        <IPhoneStatusBarupper
-          notch={require("../assets/notch3.png")}
-          iPhoneStatusBarupperPosition="absolute"
-          iPhoneStatusBarupperWidth="unset"
-          iPhoneStatusBarupperMarginTop={-462.5}
-          iPhoneStatusBarupperTop="50%"
-          iPhoneStatusBarupperRight={0}
-          iPhoneStatusBarupperLeft={0}
-          iPhoneStatusBarupperBackgroundColor="#924d4d"
-        />
         <View style={[styles.navbar, styles.navbarPosition]}>
           <Pressable
             style={styles.wrapper}

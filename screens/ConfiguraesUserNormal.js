@@ -256,16 +256,7 @@ verificação de duas etapas`}</Text>
           onTabItemPress2={() => navigation.navigate("HistoricoServios")}
           onTabItemPress4={() => navigation.navigate("Conta")}
         />
-        <IPhoneStatusBarupper
-          notch={require("../assets/notch3.png")}
-          iPhoneStatusBarupperPosition="absolute"
-          iPhoneStatusBarupperWidth="unset"
-          iPhoneStatusBarupperMarginTop={-462.5}
-          iPhoneStatusBarupperTop="50%"
-          iPhoneStatusBarupperRight={0}
-          iPhoneStatusBarupperLeft={0}
-          iPhoneStatusBarupperBackgroundColor="#924d4d"
-        />
+       
         <Pressable
           style={[styles.navbar, styles.parentFlexBox]}
           onPress={() => navigation.navigate("Conta")}
