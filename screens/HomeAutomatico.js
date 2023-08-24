@@ -204,15 +204,6 @@ const HomeAutomatico = () => {
         labelColor2="#656070"
         labelTextAlign2="center"
         labelMarginTop2={4}
-        labelHeight2="unset"
-        labelWidth2="unset"
-        labelTop1="unset"
-        labelRight="unset"
-        labelBottom="unset"
-        labelLeft1="unset"
-        labelMaxWidth="unset"
-        labelOverflow1="unset"
-        labelMaxHeight="unset"
         homeIndicatorDarkAlignSelf="stretch"
         homeIndicatorDarkHeight={34}
         homeIndicatorDarkMarginTop="unset"
@@ -262,12 +253,12 @@ const styles = StyleSheet.create({
     width: 232,
     marginLeft: 3,
     textAlign: 'center',
-    lineHeight: 18,
+    // lineHeight: 18,
     justifyContent: 'center',
     display: 'flex'
   },
   title: {
-    top: 77,
+    top: 60,
     left: 21,
     flexDirection: 'row',
     alignItems: 'center',

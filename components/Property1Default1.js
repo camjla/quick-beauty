@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react'
 import { Image } from 'expo-image'
-import { StyleSheet, View, Text, ImageSourcePropType } from 'react-native'
-import DarkThemeTrue from './DarkThemeTrue'
+import { StyleSheet, View, Text } from 'react-native'
 import { Border, Color, FontSize, FontFamily, Padding } from '../GlobalStyles'
 
 const getStyleValue = (key, value) => {
@@ -559,42 +558,6 @@ const Property1Default1 = ({
     labelMaxHeight
   ])
 
-  const darkThemeTrueStyle = useMemo(() => {
-    return {
-      ...getStyleValue('alignSelf', homeIndicatorDarkAlignSelf),
-      ...getStyleValue('height', homeIndicatorDarkHeight),
-      ...getStyleValue('marginTop', homeIndicatorDarkMarginTop)
-    }
-  }, [
-    homeIndicatorDarkAlignSelf,
-    homeIndicatorDarkHeight,
-    homeIndicatorDarkMarginTop
-  ])
-
-  const homeIndicatorStyle = useMemo(() => {
-    return {
-      ...getStyleValue('marginLeft', homeIndicatorMarginLeft),
-      ...getStyleValue('position', homeIndicatorPosition),
-      ...getStyleValue('bottom', homeIndicatorBottom),
-      ...getStyleValue('left', homeIndicatorLeft),
-      ...getStyleValue('borderRadius', homeIndicatorBorderRadius),
-      ...getStyleValue('backgroundColor', homeIndicatorBackgroundColor),
-      ...getStyleValue('width', homeIndicatorWidth),
-      ...getStyleValue('height', homeIndicatorHeight),
-      ...getStyleValue('alignSelf', homeIndicatorAlignSelf)
-    }
-  }, [
-    homeIndicatorMarginLeft,
-    homeIndicatorPosition,
-    homeIndicatorBottom,
-    homeIndicatorLeft,
-    homeIndicatorBorderRadius,
-    homeIndicatorBackgroundColor,
-    homeIndicatorWidth,
-    homeIndicatorHeight,
-    homeIndicatorAlignSelf
-  ])
-
   return (
     <View style={[styles.property1default, property1Default1Style]}>
       <View style={styles.tabBar}>
@@ -705,11 +668,6 @@ const Property1Default1 = ({
             <Text style={[styles.label, label2Style]}>{label2}</Text>
           </View>
         </View>
-        <DarkThemeTrue
-          darkThemeTrueWidth="unset"
-          darkThemeTrueAlignSelf="stretch"
-          homeIndicatorMarginLeft={-66.5}
-        />
       </View>
     </View>
   )
