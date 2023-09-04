@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { StyleSheet, View, Text, Pressable } from 'react-native'
+import { StyleSheet, ScrollView, View, Text, Pressable } from 'react-native'
 import { Image } from 'expo-image'
 import { useNavigation } from '@react-navigation/native'
 import NewsContainer from '../components/NewsContainer'
@@ -13,17 +13,18 @@ const HomeAutomatico = () => {
 
   return (
     <View style={styles.homeAutomatico}>
-      <NewsContainer />
+      to
       <HighlightedServicesContainer1 />
+      <NewsContainer />
       <Property1Default
         qualServioDesejaSolicitar="Qual serviço deseja solicitar?"
         group={require('../assets/group.png')}
         property1DefaultPosition="absolute"
-        property1DefaultWidth={391}
+        property1DefaultWidth={350}
         property1DefaultTop={124}
-        property1DefaultLeft={21}
+        property1DefaultLeft={20}
         qualServioDesejaColor="#7c7c7c"
-        groupIconMarginLeft={150}
+        groupIconMarginLeft={120}
         keywordResearchMarginLeft={150}
         onBarraDePesquisaPress={() => navigation.navigate('Servio')}
       />
@@ -220,6 +221,7 @@ const HomeAutomatico = () => {
         onTabItemPress2={() => navigation.navigate('HistoricoServios')}
         onTabItemPress4={() => navigation.navigate('Conta')}
       />
+      <NewsContainer />
     </View>
   )
 }

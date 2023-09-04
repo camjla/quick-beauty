@@ -57,7 +57,7 @@ const App = () => {
           <Stack.Navigator
             initialRouteName="Conta"
             screenOptions={{
-              headerShown: true
+              headerShown: false
             }}
           >
             <Stack.Screen

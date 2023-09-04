@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     left: '0%',
     borderRadius: Border.br_8xs,
     backgroundColor: Color.whitesmoke_200,
-    shadowColor: 'rgba(0, 0, 0, 0.25)',
+    shadowColor: 'rgba(0, 0, 0, 0.55)',
     shadowOffset: {
       width: 0,
       height: 4
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
   },
   qualServioDesejaSolicitarParent: {
     height: '60%',
-    width: '90.43%',
+    width: '70%',
     top: '20%',
     right: '8.06%',
     bottom: '20%',

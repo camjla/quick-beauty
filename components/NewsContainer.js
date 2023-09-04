@@ -1,7 +1,7 @@
-import * as React from "react";
-import { Image } from "expo-image";
-import { StyleSheet, Text, View } from "react-native";
-import { Border, FontFamily, Color, FontSize } from "../GlobalStyles";
+import * as React from 'react'
+import { Image } from 'expo-image'
+import { StyleSheet, Text, View } from 'react-native'
+import { Border, FontFamily, Color, FontSize } from '../GlobalStyles'
 
 const NewsContainer = () => {
   return (
@@ -11,12 +11,12 @@ const NewsContainer = () => {
           <Image
             style={[styles.image5Icon, styles.novidade1Position]}
             contentFit="cover"
-            source={require("../assets/image-5.png")}
+            source={require('../assets/image-5.png')}
           />
           <Text
             style={[
               styles.realizeServiosEstticos,
-              styles.realizeServiosEstticosFlexBox,
+              styles.realizeServiosEstticosFlexBox
             ]}
           >
             Realize serviços estéticos com um preço que cabe no seu bolso
@@ -24,12 +24,9 @@ const NewsContainer = () => {
           <Text
             style={[styles.subttuloSobreOContainer, styles.loremIpsumDolorTypo]}
           >
-            <Text style={styles.subttuloSobreOContainer1}>
-              S
-              <Text
-                style={styles.ubttuloSobreO}
-              >{`ubtítulo sobre o assunto `}</Text>
-            </Text>
+            <Text
+              style={styles.ubttuloSobreO}
+            >{`Subtítulo sobre o assunto `}</Text>
           </Text>
           <Text style={[styles.esttica, styles.estticaFlexBox]}>Estética</Text>
           <Text style={[styles.loremIpsumDolor, styles.loremIpsumDolorTypo]}>
@@ -45,12 +42,12 @@ const NewsContainer = () => {
           <Image
             style={[styles.image5Icon, styles.novidade1Position]}
             contentFit="cover"
-            source={require("../assets/image-5.png")}
+            source={require('../assets/image-5.png')}
           />
           <Text
             style={[
               styles.realizeServiosEstticos,
-              styles.realizeServiosEstticosFlexBox,
+              styles.realizeServiosEstticosFlexBox
             ]}
           >
             Corte seu cabelo em casa
@@ -71,76 +68,76 @@ const NewsContainer = () => {
       </View>
       <Text style={[styles.novidades2, styles.estticaFlexBox]}>Novidades</Text>
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   novidadeShadowBox: {
-    overflow: "hidden",
+    overflow: 'hidden',
     height: 118,
     width: 377,
     borderWidth: 1,
-    borderColor: "#bfbfbf",
-    borderStyle: "solid",
+    borderColor: '#bfbfbf',
+    borderStyle: 'solid',
     shadowOpacity: 1,
     elevation: 4,
     shadowRadius: 4,
     shadowOffset: {
       width: 1,
-      height: 1,
+      height: 1
     },
-    shadowColor: "rgba(0, 0, 0, 0.4)",
-    left: 0,
+    shadowColor: 'rgba(0, 0, 0, 0.4)',
+    left: 0
   },
   novidade1Position: {
     top: 8,
     borderRadius: Border.br_5xs,
-    position: "absolute",
+    position: 'absolute'
   },
   realizeServiosEstticosFlexBox: {
-    alignItems: "center",
-    display: "flex",
+    alignItems: 'center',
+    display: 'flex'
   },
   loremIpsumDolorTypo: {
     fontFamily: FontFamily.ralewayRegular,
-    textAlign: "left",
+    textAlign: 'left',
     color: Color.black,
-    position: "absolute",
+    position: 'absolute'
   },
   estticaFlexBox: {
-    justifyContent: "center",
-    textAlign: "center",
-    lineHeight: 18,
-    alignItems: "center",
-    display: "flex",
-    position: "absolute",
+    justifyContent: 'center',
+    textAlign: 'center',
+    lineHeight: 28,
+    alignItems: 'center',
+    display: 'flex',
+    position: 'absolute'
   },
   image5Icon: {
     width: 58,
     height: 48,
-    left: 8,
+    left: 8
   },
   realizeServiosEstticos: {
-    top: 21,
+    top: 20,
     fontSize: FontSize.size_xs,
-    lineHeight: 10,
-    fontWeight: "700",
+    lineHeight: 25,
+    fontWeight: '700',
     fontFamily: FontFamily.ralewayBold,
     width: 300,
     height: 23,
-    textAlign: "left",
-    alignItems: "center",
-    display: "flex",
+    textAlign: 'left',
+    alignItems: 'center',
+    display: 'flex',
     color: Color.black,
     left: 76,
-    position: "absolute",
+    position: 'absolute'
   },
   ubttuloSobreO: {
-    textTransform: "lowercase",
+    textTransform: 'lowercase'
   },
   subttuloSobreOContainer1: {
-    lineBreak: "anywhere",
-    width: "100%",
+    lineBreak: 'anywhere',
+    width: '100%'
   },
   subttuloSobreOContainer: {
     top: 42,
@@ -150,102 +147,102 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.ralewayRegular,
     left: 76,
-    alignItems: "center",
-    display: "flex",
+    alignItems: 'center',
+    display: 'flex'
   },
   esttica: {
     letterSpacing: 0.2,
-    textTransform: "capitalize",
-    fontWeight: "500",
+    textTransform: 'capitalize',
+    fontWeight: '500',
     fontFamily: FontFamily.ralewayMedium,
     color: Color.darkgray_200,
     width: 32,
     height: 9,
     fontSize: FontSize.size_5xs,
-    justifyContent: "center",
-    textAlign: "center",
+    justifyContent: 'center',
+    textAlign: 'center',
     left: 76,
-    top: 8,
+    top: 8
   },
   loremIpsumDolor: {
     top: 62,
     lineHeight: 12,
     width: 361,
     fontSize: FontSize.size_5xs,
-    left: 8,
+    left: 8
   },
   novidade2: {
     top: 138,
     borderRadius: Border.br_5xs,
-    overflow: "hidden",
+    overflow: 'hidden',
     height: 118,
     width: 377,
     borderWidth: 1,
-    borderColor: "#bfbfbf",
-    borderStyle: "solid",
+    borderColor: '#bfbfbf',
+    borderStyle: 'solid',
     shadowOpacity: 1,
     elevation: 4,
     shadowRadius: 4,
     shadowOffset: {
       width: 1,
-      height: 1,
+      height: 1
     },
-    shadowColor: "rgba(0, 0, 0, 0.4)",
+    shadowColor: 'rgba(0, 0, 0, 0.4)',
     left: 0,
-    position: "absolute",
+    position: 'absolute'
   },
   saibaComoCortar: {
     top: 41,
     lineHeight: 18,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.ralewayRegular,
-    left: 76,
+    left: 76
   },
   novidade1: {
-    overflow: "hidden",
+    overflow: 'hidden',
     height: 118,
     width: 377,
     borderWidth: 1,
-    borderColor: "#bfbfbf",
-    borderStyle: "solid",
+    borderColor: '#bfbfbf',
+    borderStyle: 'solid',
     shadowOpacity: 1,
     elevation: 4,
     shadowRadius: 4,
     shadowOffset: {
       width: 1,
-      height: 1,
+      height: 1
     },
-    shadowColor: "rgba(0, 0, 0, 0.4)",
+    shadowColor: 'rgba(0, 0, 0, 0.4)',
     left: 0,
-    top: 8,
+    top: 8
   },
   novidades1: {
     top: 24,
     left: 1,
     width: 391,
     height: 190,
-    position: "absolute",
+    position: 'absolute'
   },
   novidades2: {
     top: 0,
     left: -4,
     fontSize: FontSize.size_mini,
     letterSpacing: 0.5,
-    fontWeight: "600",
+    fontWeight: '600',
     fontFamily: FontFamily.ralewaySemiBold,
     width: 88,
     height: 24,
     color: Color.black,
-    justifyContent: "center",
-    textAlign: "center",
+    justifyContent: 'center',
+    textAlign: 'center'
   },
   novidades: {
     top: 580,
     left: 15,
     width: 392,
     height: 214,
-    position: "absolute",
-  },
-});
+    position: 'absolute'
+  }
+})
 
-export default NewsContainer;
+export default NewsContainer
