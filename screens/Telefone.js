@@ -1,12 +1,12 @@
-import * as React from "react";
-import { Text, StyleSheet, View, Pressable } from "react-native";
-import { Image } from "expo-image";
-import { useNavigation } from "@react-navigation/native";
-import Property1Default1 from "../components/Property1Default1";
-import { FontSize, Color, FontFamily, Border, Padding } from "../GlobalStyles";
+import * as React from 'react'
+import { Text, StyleSheet, View, Pressable } from 'react-native'
+import { Image } from 'expo-image'
+import { useNavigation } from '@react-navigation/native'
+import Property1Default1 from '../components/Property1Default1'
+import { FontSize, Color, FontFamily, Border, Padding } from '../GlobalStyles'
 
 const Telefone = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation()
 
   return (
     <View style={styles.telefone}>
@@ -14,9 +14,6 @@ const Telefone = () => {
         Altere o seu telefone
       </Text>
       <View style={styles.nomeParent}>
-        <View style={styles.nomeLayout}>
-          <Text style={[styles.telefone1, styles.textFlexBox1]}>Telefone</Text>
-        </View>
         <View style={styles.rectangleParent}>
           <View style={[styles.frameChild, styles.telefone1Position]} />
           <View
@@ -25,21 +22,21 @@ const Telefone = () => {
             <Image
               style={styles.emojioneV1flagForBrazilIcon}
               contentFit="cover"
-              source={require("../assets/emojionev1flagforbrazil.png")}
+              source={require('../assets/emojionev1flagforbrazil.png')}
             />
             <Text style={[styles.text, styles.textFlexBox]}>{`+55 `}</Text>
           </View>
         </View>
       </View>
       <Property1Default1
-        icon={require("../assets/icon4.png")}
-        vector={require("../assets/vector8.png")}
+        icon={require('../assets/icon4.png')}
+        vector={require('../assets/vector8.png')}
         label="Serviços"
-        icon1={require("../assets/icon1.png")}
-        mdiclipboardTextHistory={require("../assets/mdiclipboardtexthistory2.png")}
+        icon1={require('../assets/icon1.png')}
+        mdiclipboardTextHistory={require('../assets/mdiclipboardtexthistory2.png')}
         label1="Histórico"
-        icon2={require("../assets/icon1.png")}
-        group={require("../assets/group4.png")}
+        icon2={require('../assets/icon1.png')}
+        group={require('../assets/group4.png')}
         label2="Conta"
         showMarkerComponent={false}
         markerComponentVisible={false}
@@ -196,10 +193,10 @@ const Telefone = () => {
         homeIndicatorWidth={134}
         homeIndicatorHeight={5}
         homeIndicatorAlignSelf="unset"
-        onTabItemPress={() => navigation.navigate("HomeAutomatico")}
-        onTabItemPress1={() => navigation.navigate("Servio")}
-        onTabItemPress2={() => navigation.navigate("HistoricoServios")}
-        onTabItemPress4={() => navigation.navigate("Conta")}
+        onTabItemPress={() => navigation.navigate('HomeAutomatico')}
+        onTabItemPress1={() => navigation.navigate('Servio')}
+        onTabItemPress2={() => navigation.navigate('HistoricoServios')}
+        onTabItemPress4={() => navigation.navigate('Conta')}
       />
       <View style={[styles.botoAlterar, styles.botoLayout]}>
         <View style={[styles.botoAlterarChild, styles.navbarPosition]} />
@@ -210,16 +207,16 @@ const Telefone = () => {
       </Text>
       <Pressable
         style={[styles.navbar, styles.navbarPosition]}
-        onPress={() => navigation.navigate("ConfiguraesUserNormal")}
+        onPress={() => navigation.navigate('ConfiguraesUserNormal')}
       >
         <Pressable
           style={styles.wrapper}
-          onPress={() => navigation.navigate("ConfiguraesUserNormal")}
+          onPress={() => navigation.navigate('ConfiguraesUserNormal')}
         >
           <Image
             style={styles.icon}
             contentFit="cover"
-            source={require("../assets/vector-4.png")}
+            source={require('../assets/vector-4.png')}
           />
         </Pressable>
         <Text style={[styles.informaesDaConta, styles.textFlexBox]}>
@@ -227,156 +224,135 @@ const Telefone = () => {
         </Text>
       </Pressable>
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   telefone1Typo: {
-    textAlign: "left",
+    textAlign: 'left',
     letterSpacing: 0.5,
-    fontSize: FontSize.size_base,
+    fontSize: FontSize.size_base
   },
   textFlexBox1: {
-    display: "flex",
-    alignItems: "center",
+    display: 'flex',
+    alignItems: 'flex-start'
   },
   telefone1Position: {
     left: 0,
     top: 0,
-    position: "absolute",
+    position: 'absolute'
   },
   navbarFlexBox: {
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignItems: 'center'
   },
   textFlexBox: {
-    textAlign: "center",
-    lineHeight: 18,
+    textAlign: 'center'
   },
   botoLayout: {
     height: 43,
-    width: 148,
+    width: 148
   },
   navbarPosition: {
-    borderStyle: "solid",
-    left: "50%",
-    top: "50%",
-    position: "absolute",
+    borderStyle: 'solid',
+    left: '50%',
+    top: '50%',
+    position: 'absolute'
   },
   alterarPosition: {
-    left: "50%",
-    top: "50%",
-    position: "absolute",
+    left: '50%',
+    top: '50%',
+    position: 'absolute'
   },
   altereOSeu: {
     top: 136,
     left: 131,
     color: Color.black,
     fontFamily: FontFamily.ralewayBold,
-    fontWeight: "700",
-    lineHeight: 18,
-    textAlign: "left",
+    fontWeight: '700',
+    textAlign: 'left',
     letterSpacing: 0.5,
     fontSize: FontSize.size_base,
-    position: "absolute",
+    position: 'absolute'
   },
   telefone1: {
-    fontWeight: "600",
+    fontWeight: '600',
     fontFamily: FontFamily.ralewaySemiBold,
     color: Color.darkslategray_100,
-    left: 0,
-    top: 0,
-    position: "absolute",
-    height: 32,
-    width: 78,
-    textAlign: "left",
-    letterSpacing: 0.5,
-    fontSize: FontSize.size_base,
-    display: "flex",
-  },
-  nomeLayout: {
-    height: 32,
-    width: 78,
+    position: 'absolute',
+    fontSize: FontSize.size_base
   },
   frameChild: {
     borderRadius: Border.br_3xs,
     backgroundColor: Color.whitesmoke_300,
     height: 40,
-    width: 307,
+    width: 307
   },
   emojioneV1flagForBrazilIcon: {
     width: 15,
     height: 15,
-    overflow: "hidden",
+    overflow: 'hidden'
   },
   text: {
-    fontWeight: "500",
+    fontWeight: '500',
     fontFamily: FontFamily.ralewayMedium,
     color: Color.gray_500,
     width: 31,
-    height: 12,
+    height: 20,
     marginLeft: 2,
     letterSpacing: 0.4,
-    fontSize: FontSize.size_smi,
-    textAlign: "center",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
+    fontSize: FontSize.size_smi
   },
   emojioneV1flagForBrazilParent: {
     top: 12,
     left: 10,
     paddingHorizontal: Padding.p_8xs,
     paddingVertical: 0,
-    position: "absolute",
+    position: 'absolute'
   },
   rectangleParent: {
     height: 60,
     marginTop: 5,
-    width: 307,
+    width: 307
   },
   nomeParent: {
-    top: 178,
-    left: 63,
-    justifyContent: "center",
-    alignItems: "center",
-    position: "absolute",
+    top: 180,
+    left: 45,
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'absolute'
   },
   botoAlterarChild: {
     marginTop: -21.5,
     marginLeft: -74,
     borderRadius: Border.br_xl,
     backgroundColor: Color.lightpink_100,
-    borderColor: "#f498af",
+    borderColor: '#f498af',
     borderWidth: 1,
     height: 43,
-    width: 148,
+    width: 148
   },
   alterar: {
     marginTop: -9.5,
-    marginLeft: -23,
-    fontWeight: "800",
+    marginLeft: -20,
+    fontWeight: '800',
     fontFamily: FontFamily.ralewayExtraBold,
     color: Color.gray_600,
-    textAlign: "center",
-    lineHeight: 18,
+    textAlign: 'center',
     letterSpacing: 0.4,
-    fontSize: FontSize.size_smi,
+    fontSize: FontSize.size_smi
   },
   botoAlterar: {
-    marginTop: -150.5,
-    marginLeft: -80.5,
-    shadowOpacity: 1,
-    elevation: 4,
-    shadowRadius: 4,
+    shadowOpacity: 10,
+    shadowRadius: 40,
     shadowOffset: {
-      width: 0,
-      height: 4,
+      width: 100,
+      height: 40
     },
-    shadowColor: "rgba(0, 0, 0, 0.25)",
-    left: "50%",
-    top: "50%",
-    position: "absolute",
+    shadowColor: 'rgba(0, 0, 0, 0.55)',
+    left: '30%',
+    top: '35%',
+    position: 'absolute'
   },
   iremosTeEnviar: {
     top: 263,
@@ -384,34 +360,34 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_3xs,
     letterSpacing: 0.3,
     fontFamily: FontFamily.ralewayRegular,
-    color: "rgba(65, 64, 64, 0.6)",
-    position: "absolute",
+    color: 'rgba(65, 64, 64, 0.6)',
+    position: 'absolute'
   },
   icon: {
-    height: "100%",
-    width: "100%",
+    height: '100%',
+    width: '100%'
   },
   wrapper: {
-    width: 19,
-    height: 19,
+    width: 15,
+    height: 25
   },
   informaesDaConta: {
     fontSize: FontSize.size_xl,
     letterSpacing: 0.6,
     color: Color.darkseagreen,
     width: 244,
-    height: 35,
+    top: 4,
     marginLeft: 60,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     fontFamily: FontFamily.ralewayBold,
-    fontWeight: "700",
+    fontWeight: '700'
   },
   navbar: {
     marginTop: -417.5,
     marginLeft: -215.5,
-    borderColor: "rgba(151, 151, 151, 0.5)",
+    borderColor: 'rgba(151, 151, 151, 0.5)',
     borderBottomWidth: 1,
     width: 431,
     height: 53,
@@ -422,19 +398,20 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
     shadowOffset: {
       width: 0,
-      height: 4,
+      height: 4
     },
-    shadowColor: "rgba(0, 0, 0, 0.25)",
-    overflow: "hidden",
-    flexDirection: "row",
-    alignItems: "center",
+    shadowColor: 'rgba(0, 0, 0, 0.25)',
+    overflow: 'hidden',
+    flexDirection: 'row',
+    alignItems: 'center'
   },
   telefone: {
     backgroundColor: Color.colorsBackgroundsLight,
     flex: 1,
-    height: 929,
-    width: "100%",
-  },
-});
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center'
+  }
+})
 
-export default Telefone;
+export default Telefone
